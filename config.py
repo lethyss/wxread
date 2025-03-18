@@ -10,14 +10,14 @@ import re
 # 阅读次数 默认120次/60分钟
 READ_NUM = int(os.getenv('READ_NUM') or 120)
 # 需要推送时可选，可选pushplus、wxpusher、telegram
-PUSH_METHOD = "" or os.getenv('PUSH_METHOD')
+PUSH_METHOD = "wxpusher" or os.getenv('PUSH_METHOD')
 # pushplus推送时需填
 PUSHPLUS_TOKEN = "" or os.getenv("PUSHPLUS_TOKEN")
 # telegram推送时需填
 TELEGRAM_BOT_TOKEN = "" or os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = "" or os.getenv("TELEGRAM_CHAT_ID")
 # wxpusher推送时需填
-WXPUSHER_SPT = "" or os.getenv("WXPUSHER_SPT")
+WXPUSHER_SPT = "SPT_UMNHlE76cVIse9BvMEhUedrKTM1a" or os.getenv("WXPUSHER_SPT")
 # read接口的bash命令，本地部署时可对应替换headers、cookies
 curl_str = os.getenv('WXREAD_CURL_BASH')
 
@@ -41,7 +41,7 @@ headers = {
 
 
 """
-建议保留区域|默认读三体，其它书籍自行测试时间是否增加
+建议保留区域|默认读房思琪的初恋乐园，其它书籍自行测试时间是否增加
 """
 data = {
     "appId":"wb182564874663h1964571299",
