@@ -8,16 +8,16 @@ import re
 """
 
 # 阅读次数 默认40次/20分钟
-READ_NUM = int(os.getenv('READ_NUM') or 40)
+READ_NUM = int(os.getenv('READ_NUM') or 1200)
 # 需要推送时可选，可选pushplus、wxpusher、telegram
-PUSH_METHOD = "" or os.getenv('PUSH_METHOD')
+PUSH_METHOD = "wxpusher" or os.getenv('PUSH_METHOD')
 # pushplus推送时需填
 PUSHPLUS_TOKEN = "" or os.getenv("PUSHPLUS_TOKEN")
 # telegram推送时需填
 TELEGRAM_BOT_TOKEN = "" or os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = "" or os.getenv("TELEGRAM_CHAT_ID")
 # wxpusher推送时需填
-WXPUSHER_SPT = "" or os.getenv("WXPUSHER_SPT")
+WXPUSHER_SPT = "SPT_UMNHlE76cVIse9BvMEhUedrKTM1a" or os.getenv("WXPUSHER_SPT")
 # read接口的bash命令，本地部署时可对应替换headers、cookies
 curl_str = os.getenv('WXREAD_CURL_BASH')
 
@@ -56,24 +56,24 @@ chapter = [
 ]
 
 """
-建议保留区域|默认读三体，其它书籍自行测试时间是否增加
+建议保留区域|默认读房思琪，其它书籍自行测试时间是否增加
 """
 data = {
-    "appId": "wb182564874603h266381671",
-    "b": "ce032b305a9bc1ce0b0dd2a",
-    "c": "7f632b502707f6ffaa6bf2e",
-    "ci": 27,
-    "co": 389,
-    "sm": "19聚会《三体》网友的聚会地点是一处僻静",
-    "pr": 74,
-    "rt": 15,
-    "ts": 1744264311434,
-    "rn": 466,
-    "sg": "2b2ec618394b99deea35104168b86381da9f8946d4bc234e062fa320155409fb",
-    "ct": 1744264311,
-    "ps": "4ee326507a65a465g015fae",
-    "pc": "aab32e207a65a466g010615",
-    "s": "36cc0815"
+    "appId": "wb182564874663h1484727348",
+    "b": "6bb324405e15d46bb6d43d0",
+    "c": "9bf32f301f9bf31c7ff0a60",
+    "ci": 5,
+    "co": 562,
+    "sm": "[插图]改编自真人真事",
+    "pr": 2,
+    "rt": 30,
+    "ts": 1745811107011,
+    "rn": 720,
+    "sg": "316b28d329a1ca50e7e4c58c82138cb7bde6a6eeee0ab7fa194b67b0409faa28",
+    "ct": 1745811107,
+    "ps": "5af32dd07a67e573g014bb9",
+    "pc": "34732ce07a67e573g01505d",
+    "s": "a18240b6"
 }
 
 
